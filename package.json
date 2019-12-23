@@ -1,0 +1,90 @@
+{
+    "name": "gatsby-theme-dotdev",
+    "version": "1.0.1",
+    "author": "Kenneth Wang <me@kennethwang.dev>",
+    "description": "Personal site for developers. Includes portfolio and blog.",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "code:clean": "yarn code:lint && yarn code:format",
+        "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\" --fix",
+        "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}' --write",
+        "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+    },
+    "peerDependencies": {
+        "gatsby": "^2.15.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0"
+    },
+    "dependencies": {
+        "@mdx-js/mdx": "^1.5.1",
+        "@mdx-js/react": "^1.5.1",
+        "@types/chroma-js": "^1.4.3",
+        "@types/react": "^16.9.17",
+        "@types/react-burger-menu": "^2.6.0",
+        "@types/react-helmet": "^5.0.14",
+        "@types/styled-components": "^4.4.0",
+        "babel-plugin-styled-components": "^1.10.6",
+        "chroma-js": "^2.1.0",
+        "gatsby-core-utils": "^1.0.17",
+        "gatsby-image": "^2.2.32",
+        "gatsby-plugin-alias-imports": "^1.0.5",
+        "gatsby-plugin-mdx": "^1.0.55",
+        "gatsby-plugin-netlify": "^2.1.25",
+        "gatsby-plugin-react-helmet": "^3.1.13",
+        "gatsby-plugin-sharp": "^2.2.36",
+        "gatsby-plugin-sitemap": "^2.2.21",
+        "gatsby-plugin-styled-components": "^3.1.16",
+        "gatsby-plugin-typescript": "^2.1.15",
+        "gatsby-remark-custom-blocks": "^2.1.15",
+        "gatsby-remark-embedder": "^1.6.0",
+        "gatsby-remark-external-links": "0.0.4",
+        "gatsby-remark-images": "^3.1.28",
+        "gatsby-remark-reading-time": "^1.1.0",
+        "gatsby-source-filesystem": "^2.1.35",
+        "gatsby-transformer-sharp": "^2.3.2",
+        "lodash.kebabcase": "^4.1.1",
+        "mdx-utils": "^0.2.0",
+        "mkdirp": "^0.5.1",
+        "prism-react-renderer": "^1.0.2",
+        "react-burger-menu": "^2.6.13",
+        "react-helmet": "^5.2.1",
+        "react-live": "^2.2.1",
+        "remark-unwrap-images": "^1.0.0",
+        "responsive-typescale": "^2.0.1",
+        "styled-components": "^4.4.1"
+    },
+    "keywords": [
+        "gatsby",
+        "gatsby-theme",
+        "gatsby-plugin",
+        "kennethwangdotdev"
+    ],
+    "bugs": {
+        "url": "https://github.com/KennethWangDotDev/gatsby-theme-dotdev/issues"
+    },
+    "homepage": "https://github.com/KennethWangDotDev/gatsby-theme-dotdev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KennethWangDotDev/gatsby-theme-dotdev.git"
+    },
+    "devDependencies": {
+        "cz-conventional-changelog": "3.0.2",
+        "eslint": "^6.1.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-import-resolver-typescript": "^2.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.16.0",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "gatsby": "^2.17.15",
+        "poetic": "^1.1.0",
+        "react": "^16.9.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}

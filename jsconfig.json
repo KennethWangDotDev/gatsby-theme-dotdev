@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "esnext",
+        "jsx": "preserve",
+        "paths": {
+            "@src/*": ["./src/*"],
+            "@components/*": ["./src/components/*"],
+            "@layouts/*": ["./src/layouts/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@assets/*": ["./src/assets/*"]
+        }
+    }
+}

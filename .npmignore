@@ -1,0 +1,21 @@
+.git/
+.vscode/
+.history
+
+# for npm
+node_modules/
+npm-shrinkwrap.json
+
+.tscache/
+# codes
+test/
+
+.gitignore
+.editorconfig
+tslint.json
+.eslintrc.js
+.prettierrc.js
+CHANGELOG.md
+jsconfig.json
+
+npm-debug.log
