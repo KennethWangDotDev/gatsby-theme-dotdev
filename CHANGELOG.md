@@ -1,4 +1,4 @@
-## 1.0.4 (2019-12-26)
+## 1.1.0 (2019-12-26)
 
 ### Bug Fixes
 
@@ -8,3 +8,4 @@
 ### Features
 
 -   **gatsby-theme-dotdev:** initial commit ([5aa99aa](https://github.com/KennethWangDotDev/gatsby-theme-dotdev/commit/5aa99aa))
+-   **home:** make author's role configurable ([eba1222](https://github.com/KennethWangDotDev/gatsby-theme-dotdev/commit/eba1222))
