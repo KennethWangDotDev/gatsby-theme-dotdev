@@ -8,13 +8,13 @@ interface ArticleButtonProps {
 
 /* eslint-disable indent */
 const ArticleButton = styled.a<ArticleButtonProps>`
-    background-color: ${props =>
+    background-color: ${(props) =>
         props.color
             ? chroma(props.color)
                   .brighten(1)
                   .hex()
             : 'white'};
-    border: 2px solid ${props =>
+    border: 2px solid ${(props) =>
         props.color
             ? chroma(props.color)
                   .brighten(2)
@@ -28,7 +28,7 @@ const ArticleButton = styled.a<ArticleButtonProps>`
     ${size(2)}
     ${margin('top', 2)}
     ${margin('bottom', 4)}
-    color: ${props =>
+    color: ${(props) =>
         props.color ? chroma.mix(props.color, 'white', 0.85).hex() : 'white'}!important;
     ${media.medium(`
         padding: 1.25rem 0;

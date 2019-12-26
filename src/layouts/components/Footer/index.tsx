@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     const siteMetadata = useSiteMetadata();
     const { author, footerLinks } = siteMetadata;
 
-    const FooterLinks = footerLinks.map(footerLink => (
+    const FooterLinks = footerLinks.map((footerLink) => (
         <FooterLink href={footerLink.url} target="_blank">
             {footerLink.title}
         </FooterLink>

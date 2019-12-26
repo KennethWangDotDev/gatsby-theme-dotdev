@@ -7,7 +7,7 @@ import { useTitleFont } from '@styles/fontFamily';
 const containerWidth = 70;
 const containerPadding = 3;
 const containerPaddingTablet = 2;
-const tabletView = str => `
+const tabletView = (str) => `
     @media(max-width: 62.5em) {
         ${str};
     }

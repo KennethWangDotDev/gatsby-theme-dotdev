@@ -23,7 +23,7 @@ const PostImage = styled.img<PostImageProps>`
         width: ${imageSize * 0.75}rem;
         height: ${imageSize * 0.75}rem;
     `)}
-    ${props =>
+    ${(props) =>
         props.large &&
         css`
             margin-top: 1rem;
@@ -47,7 +47,7 @@ const Title = styled.h1<TitleProps>`
     font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.25;
-    ${props =>
+    ${(props) =>
         props.large &&
         css`
             ${size(1)}

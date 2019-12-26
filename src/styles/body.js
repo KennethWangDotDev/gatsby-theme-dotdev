@@ -3,7 +3,7 @@ import { useTitleFont } from '@styles/fontFamily';
 import { palette } from '@styles/colors';
 import BgCode from '@assets/subtle/BgCode.png';
 
-const bodyCss = articleBlock => `
+const bodyCss = (articleBlock) => `
     ${size(0)}
     line-height: 1.5;
 

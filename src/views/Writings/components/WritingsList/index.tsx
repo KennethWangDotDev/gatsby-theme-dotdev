@@ -5,7 +5,7 @@ import { Container } from './style';
 
 const WritingsList: React.FC = () => {
     const writings = useWritings();
-    const writingsComponent = writings.map(writing => (
+    const writingsComponent = writings.map((writing) => (
         <Container key={writing.title}>
             <PostPreview
                 large

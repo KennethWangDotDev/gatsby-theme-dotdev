@@ -7,14 +7,14 @@ interface ButtonProps {
 
 /* eslint-disable indent */
 const Button = styled.a<ButtonProps>`
-    background-color: ${props =>
+    background-color: ${(props) =>
         props.color
             ? chroma(props.color)
                   .brighten(1)
                   .hex()
             : 'white'};
     border: 1px solid
-        ${props =>
+        ${(props) =>
             props.color
                 ? chroma(props.color)
                       .brighten(2)

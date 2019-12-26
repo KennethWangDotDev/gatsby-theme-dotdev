@@ -35,7 +35,7 @@ const Header: React.FC = () => {
     const { siteTitle } = useSiteMetadata();
     const NavLinks = (mobile = false): JSX.Element[] => {
         const NavLink = mobile ? NavLinkMobile : NavLinkDesktop;
-        return navLinks.map(navLink => (
+        return navLinks.map((navLink) => (
             <NavLink key={navLink.title}>
                 <Link to={navLink.url}>{navLink.title}</Link>
             </NavLink>
