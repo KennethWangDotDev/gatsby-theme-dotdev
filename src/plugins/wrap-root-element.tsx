@@ -10,7 +10,7 @@ import Divider from '@components/Divider';
 // components is its own object outside of render so that the references to
 // components are stable
 const components = {
-    pre: preProps => {
+    pre: (preProps) => {
         const props = preToCodeBlock(preProps);
         // if there's a codeString and some props, we passed the test
         if (props) {
@@ -26,6 +26,6 @@ const components = {
     wrapper: ({ children }) => <>{children}</>,
 };
 
-const wrap = ({ element }) => <MDXProvider components={components}>{element}</MDXProvider>;
+const wrapRoot = ({ element }) => <MDXProvider components={components}>{element}</MDXProvider>;
 
-export default wrap;
+export default wrapRoot;

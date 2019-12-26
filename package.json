@@ -1,6 +1,6 @@
 {
     "name": "gatsby-theme-dotdev",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Kenneth Wang <me@kennethwang.dev>",
     "description": "Personal site for developers. Includes portfolio and blog.",
     "license": "MIT",
@@ -9,7 +9,8 @@
         "code:clean": "yarn code:lint && yarn code:format",
         "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\" --fix",
         "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}' --write",
-        "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+        "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+        "commit": "git-cz"
     },
     "peerDependencies": {
         "gatsby": "^2.15.2",
@@ -69,6 +70,7 @@
         "url": "https://github.com/KennethWangDotDev/gatsby-theme-dotdev.git"
     },
     "devDependencies": {
+        "commitizen": "^4.0.3",
         "cz-conventional-changelog": "3.0.2",
         "eslint": "^6.1.0",
         "eslint-config-airbnb": "^18.0.1",

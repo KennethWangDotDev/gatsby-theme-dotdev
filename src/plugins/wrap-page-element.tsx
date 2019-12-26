@@ -1,3 +1,5 @@
+/* eslint-disable */
+import React from 'react';
 import styled from 'styled-components';
 import SubtleBackground from '@assets/subtle/BgPage.png';
 
@@ -8,4 +10,6 @@ const Background = styled.div`
     padding-right: 1rem;
 `;
 
-export { Background };
+const wrapPage = ({ element }) => <Background>{element}</Background>;
+
+export default wrapPage;
