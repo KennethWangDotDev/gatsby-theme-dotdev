@@ -44,7 +44,9 @@ const Header: React.FC = () => {
 
     return (
         <HeaderContainer>
-            <SiteTitle href="/">{siteTitle}</SiteTitle>
+            <SiteTitle>
+                <Link to="/">{siteTitle}</Link>
+            </SiteTitle>
             <NavigationContainer>
                 <Desktop>{NavLinks()}</Desktop>
                 <Mobile>

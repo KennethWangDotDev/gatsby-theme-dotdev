@@ -10,7 +10,7 @@ const HeaderContainer = styled.header`
     justify-content: space-between;
 `;
 
-const SiteTitle = styled.a`
+const SiteTitle = styled.span`
     ${headerFooterTextStyle(true)}
 `;
 
