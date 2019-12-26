@@ -4,12 +4,12 @@ import { Container, Me, Tagline } from './style';
 
 const Name: React.FC = () => {
     const siteMetadata = useSiteMetadata();
-    const { author } = siteMetadata;
+    const { author, role } = siteMetadata;
 
     return (
         <Container>
             <Me>{author}</Me>
-            <Tagline>fullstack engineer</Tagline>
+            <Tagline>{role}</Tagline>
         </Container>
     );
 };

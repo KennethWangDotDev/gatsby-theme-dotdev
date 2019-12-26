@@ -14,6 +14,7 @@ type SiteMetadata = {
     siteLanguage: string;
     siteImage: string;
     author: string;
+    role: string;
     footerLinks: FooterLink[];
     projectsSubtitle: string;
     writingsSubtitle: string;
@@ -38,6 +39,7 @@ const useSiteMetadata = (): SiteMetadata => {
                     siteLanguage
                     siteImage
                     author
+                    role
                     footerLinks {
                         title
                         url

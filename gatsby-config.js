@@ -14,6 +14,7 @@ module.exports = (themeOptions) => {
             siteLanguage: 'en',
             siteImage: '/banner.jpg',
             author: 'Kenneth Wang',
+            role: 'fullstack engineer',
             footerLinks: [
                 {
                     title: 'GitHub',
