@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import Main from '@layouts/Main';
 import SEO from '@src/components/SEO';
 import { WritingPostContainer, Title, Metadata, Body } from './style';
 
@@ -9,7 +8,7 @@ const Post: React.FC<Props> = ({ data }: Props) => {
     const { title, date, body, timeToRead, words, description, slug } = data.writing;
 
     return (
-        <Main>
+        <>
             <SEO title={title} description={description} pathname={`/writings/${slug}`} />
             <WritingPostContainer>
                 <Title>{title}</Title>
@@ -21,7 +20,7 @@ const Post: React.FC<Props> = ({ data }: Props) => {
                     <MDXRenderer>{body}</MDXRenderer>
                 </Body>
             </WritingPostContainer>
-        </Main>
+        </>
     );
 };
 

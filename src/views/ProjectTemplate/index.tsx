@@ -1,14 +1,13 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import Main from '@layouts/Main';
 import SEO from '@src/components/SEO';
 import { ProjectTemplateContainer, OverviewContainer, Title, Subtitle, Body } from './style';
 
 const Post: React.FC<Props> = ({ data }: Props) => {
     const { title, body, description, slug } = data.project;
     return (
-        <Main>
+        <>
             <SEO title={title} description={description} pathname={`/writings/${slug}`} />
             <ProjectTemplateContainer>
                 <OverviewContainer>
@@ -19,7 +18,7 @@ const Post: React.FC<Props> = ({ data }: Props) => {
                     <MDXRenderer>{body}</MDXRenderer>
                 </Body>
             </ProjectTemplateContainer>
-        </Main>
+        </>
     );
 };
 
