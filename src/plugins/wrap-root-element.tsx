@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react';
+import Main from '@layouts/Main';
 import { MDXProvider } from '@mdx-js/react';
 import { preToCodeBlock } from 'mdx-utils';
 import Code from '@components/Code';
@@ -26,6 +27,10 @@ const components = {
     wrapper: ({ children }) => <>{children}</>,
 };
 
-const wrapRoot = ({ element }) => <MDXProvider components={components}>{element}</MDXProvider>;
+const wrapRoot = ({ element }) => (
+    <MDXProvider components={components}>
+        <Main>{element}</Main>
+    </MDXProvider>
+);
 
 export default wrapRoot;
